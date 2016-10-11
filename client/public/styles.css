@@ -1,24 +1,37 @@
 .city {
   border: 3px solid black;
   width: 100px;
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .arrow {
   width: 10px;
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .miles {
   border: 1px solid black;
   border-radius: 25%;
   width: 100px;
-  margin: 5px;
+  margin: 5px auto;
   padding: 5px;
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
+}
+
+/*.total, .form {
+  display:inline-block;
+}*/
+
+.itin {
+  text-align: center;
+  /*border: 1px solid black;*/
+  width: 800px;
+  margin: 0 auto;
+  max-height: 700px;
+  overflow-y: scroll;
 }

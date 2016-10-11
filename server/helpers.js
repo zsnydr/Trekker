@@ -36,10 +36,6 @@ module.exports.milesBetween = function(tuple) {
   });
 };
 
-module.exports.kelvinToFar = function(kelvin) {
-  return kelvin * (9 / 5) - 459.67;
-};
-
 module.exports.getGeoCodes = function(city) {
   return new Promise(function(resolve, reject) {
     geocoder.geocode(city, function(err, data) {
