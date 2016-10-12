@@ -13,7 +13,7 @@ $(document).on('ready', function() {
   var getData = function(city, cb) {
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/city',
+      url: '/city',
       data: JSON.stringify({city: city}),
       contentType: 'application/json',
     })
