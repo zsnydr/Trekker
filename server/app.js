@@ -7,7 +7,7 @@ var helpers = require('./helpers');
 var app = express();
 module.exports.app = app;
 
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
