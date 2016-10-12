@@ -1,37 +1,56 @@
+h1 {
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  height: 50px;
+  padding: 10px;
+}
+
 .city {
-  border: 3px solid black;
-  width: 100px;
+  border: 3px solid #333333;
+  width: 200px;
   margin: 10px auto;
   padding: 10px;
   text-align: center;
   /*display: inline-block;*/
 }
 
-.arrow {
-  width: 10px;
-  text-align: center;
-  /*display: inline-block;*/
+.loc {
+  font-size: 20px;
 }
 
 .miles {
-  border: 1px solid black;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #333333;
+  text-align: center;
+  margin: 5px auto;
+  /*display: inline-block;*/
+}
+
+/*.arrrow {
+  border: 1px solid #262626;
   border-radius: 25%;
   width: 100px;
   margin: 5px auto;
   padding: 5px;
   text-align: center;
-  /*display: inline-block;*/
-}
-
-/*.total, .form {
-  display:inline-block;
+  display: inline-block;
 }*/
 
 .itin {
   text-align: center;
-  /*border: 1px solid black;*/
   width: 800px;
   margin: 0 auto;
-  max-height: 700px;
+  padding-bottom: 20px;
+  max-height: 600px;
   overflow-y: scroll;
+  color: #333333;
+}
+
+.total {
+  padding: 10px;
+  color: #333333;
 }
