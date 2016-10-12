@@ -22,8 +22,13 @@ module.exports.milesBetween = function(tuple) {
   return new Promise(function(resolve, reject) {
     var R = 3959; // miles
 
-    var [lat1, lon1] = (locations.length > 1) ? locations[locations.length - 2].coords : tuple[0];
-    var [lat2, lon2] = tuple[0];
+    //var [lat1, lon1] = (locations.length > 1) ? locations[locations.length - 2].coords : tuple[0];
+
+    var lat1 = (locations.length > 1) ? locations[locations.length - 2].coords[0] : tuple[0][0];
+    var lon1 = (locations.length > 1) ? locations[locations.length - 2].coords[1] : tuple[0][1];
+    //var [lat2, lon2] = tuple[0];
+    var lat2 = tuple[0][0];
+    var lon2 = tuple[0][1];
 
     var dLat = (lat2-lat1).toRad();
     var dLon = (lon2-lon1).toRad();
